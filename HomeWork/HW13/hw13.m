@@ -1,23 +1,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name         : Sriharsha Singam
-% T-square ID  : ssingam3
-% GT Email     : harshasingam3@gatech.edu
-% Homework     : HW11
+% T-square ID  : ~
+% GT Email     : ~
+% Homework     : HW13
 % Course       : CS1371
-% Section      : C02
+% Section      : CO2
 % Collaboration: "I worked on the homework assignment alone, using
 %                  only course materials."
 %
 % Files to submit:
-%	ABCs_numericalMethods.m
-%	ABCs_plotting.m
-%	area51.m
-%	cropPolygon.m
-%	flatEarth.m
-%	hw11.m
-%	illuminati.m
-%	isSeahavenReal.m
-%	timeTravel.m
+%	ABCs_recursion.m
+%	cheerfulDigits.m
+%	collatz.m
+%	determinant.m
+%	hw13.m
+%	luigisMansion.m
+%	mobyDick.m
+%	r_nFib.m
+%	recursiveSum.m
+%	towersOfHaynoi.m
 %
 % Instructions:
 %   1) Follow the directions for each problem very carefully or you will
@@ -41,28 +42,27 @@
 %% PART 1.  ABC Problems
 %--------------------------------------------------------------------------
 %
-% Part of this homework are m-files called "ABCs_plotting.m" and "ABCs_numericalMethods.m".
-% Open these files in MATLAB and complete them
+% Part of this homework is an m-file called "ABCs_recursion.m".
+% Open this file in MATLAB and complete it
 % according to the directions contained within. You can test your answers with
 % the test file listed below.
 %
 % Files to Complete: 
-%	ABCs_plotting.m
-%	ABCs_numericalMethods.m
+%	ABCs_recursion.m
+
 %
 % ABCs File Testing:
-%	ABCs_hw11_pretest.p
+%	ABCs_hw13_pretest.p
 %
 %==========================================================================
 %% PART 2. Drill Problems
 %--------------------------------------------------------------------------
 %
-% Included with this homework is a file entitled "HW11_DrillProblems.pdf",
-% containing instructions for 6 drill problems that cover the
-% following topics:
+% Included with this homework is a file entitled "HW13_DrillProblems.pdf",
+% containing instructions for 8 drill problems that cover the
+% following topic:
 %
-%	Plotting
-%	Numerical Methods
+%	Recursion
 %
 % Follow the directions carefully to write code to complete the drill
 % problems as described. Make sure file names as well as function headers
@@ -78,108 +78,115 @@
 % The function call with the test-inputs is shown in the first line of each
 % test case, and the correct outputs are displayed in subsequent lines.
 %
-%% Function Name: illuminati
+%% Function Name: recursiveSum
 %
 % Test Cases:
-% illuminati(3, 45)
-% 		Output plot(s) should be identical to that produced by solution file
-% 
-% illuminati(28, 3)
-% 		Output plot(s) should be identical to that produced by solution file
-% 
-% illuminati(1.5, 69)
-% 		Output plot(s) should be identical to that produced by solution file
-%
-%--------------------------------------------------------------------------------
-%% Function Name: flatEarth
-%
-% Setup:
-%	load flatEarth_student.mat
-%
-% Test Cases:
-% [out1] = flatEarth(vel1, time1)
+% [sum1] = recursiveSum([4,17,9,5])
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [out2] = flatEarth(vel2, time2)
+% [sum2] = recursiveSum([-5,0,9,4,13])
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [out3] = flatEarth(vel3, time3)
+% [sum3] = recursiveSum([3,-4,-8,-12,6,4])
 % 		Output variable(s) should be identical to that produced by the solution file
 %
 %--------------------------------------------------------------------------------
-%% Function Name: timeTravel
-%
-% Setup:
-%	load timeTravel_rubrica.mat
+%% Function Name: cheerfulDigits
 %
 % Test Cases:
-% [str1] = timeTravel(in1, in2, in3)
+% [out1] = cheerfulDigits(7)
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [str2] = timeTravel(in4, in5, in6)
+% [out1] = cheerfulDigits(40)
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [str3] = timeTravel(in7, in8, in9)
+% [out1] = cheerfulDigits(129)
 % 		Output variable(s) should be identical to that produced by the solution file
 %
 %--------------------------------------------------------------------------------
-%% Function Name: area51
-%
-% Setup:
-%	load area51cases.mat
+%% Function Name: r_nFib
 %
 % Test Cases:
-% [str1] = area51(data1, [20000 40000], 5)
+% [seq1] = r_nFib(4, 10)
 % 		Output variable(s) should be identical to that produced by the solution file
-% 		Output plot(s) should be identical to that produced by solution file
 % 
-% [str2] = area51(data2, [345676 839594], 7.8)
+% [seq2] = r_nFib(0, 6)
 % 		Output variable(s) should be identical to that produced by the solution file
-% 		Output plot(s) should be identical to that produced by solution file
 % 
-% [str3] = area51(data3, [10000 15000], 1.3)
+% [seq3] = r_nFib(400, 1)
 % 		Output variable(s) should be identical to that produced by the solution file
-% 		Output plot(s) should be identical to that produced by solution file
 %
 %--------------------------------------------------------------------------------
-%% Function Name: cropPolygon
-%
-% Setup:
-%	load cropPolygonTest.mat
+%% Function Name: collatz
 %
 % Test Cases:
-% cropPolygon(lengths1, angles1)
-% 		Output plot(s) should be identical to that produced by solution file
+% [out1, steps1] = collatz(1)
+% 		Output variable(s) should be identical to that produced by the solution file
 % 
-% cropPolygon(lengths2, angles2)
-% 		Output plot(s) should be identical to that produced by solution file
+% [out2, steps2] = collatz(54789)
+% 		Output variable(s) should be identical to that produced by the solution file
 % 
-% cropPolygon(lengths3, angles3)
-% 		Output plot(s) should be identical to that produced by solution file
-% 
-% cropPolygon(lengths4, angles4)
-% 		Output plot(s) should be identical to that produced by solution file
+% [out3, steps3] = collatz(10)
+% 		Output variable(s) should be identical to that produced by the solution file
 %
 %--------------------------------------------------------------------------------
-%% Function Name: isSeahavenReal
-%
-% Setup:
-%	load isSeahavenReal_rubrica.mat
+%% Function Name: determinant
 %
 % Test Cases:
-% [coeffs1] = isSeahavenReal(in1, in2)
+% [out1] = determinant([1 8; 9 2])
 % 		Output variable(s) should be identical to that produced by the solution file
-% 		Output plot(s) should be identical to that produced by solution file
 % 
-% [coeffs2] = isSeahavenReal(in3, in4)
+% [out1] = determinant([1 8 4; 5 1 7; 2 9 6])
 % 		Output variable(s) should be identical to that produced by the solution file
-% 		Output plot(s) should be identical to that produced by solution file
 % 
-% [coeffs3] = isSeahavenReal(in5, in6)
+% [out1] = determinant([1 1 1 1 1; 2 2 2 2 2; 3 3 3 3 3; 4 4 4 4 4; 5 5 5 5 5])
 % 		Output variable(s) should be identical to that produced by the solution file
-% 		Output plot(s) should be identical to that produced by solution file
+%
+%--------------------------------------------------------------------------------
+%% Function Name: luigisMansion
+%
+% Setup:
+%	load studentCases.mat
+%
+% Test Cases:
+% [out1] = luigisMansion(mansion1, [1,1])
+% 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [coeffs4] = isSeahavenReal(in7, in8)
+% [out2] = luigisMansion(mansion2, [1,3])
 % 		Output variable(s) should be identical to that produced by the solution file
-% 		Output plot(s) should be identical to that produced by solution file
+% 
+% [out3] = luigisMansion(mansion3, [2,2])
+% 		Output variable(s) should be identical to that produced by the solution file
+%
+%--------------------------------------------------------------------------------
+%% Function Name: mobyDick
+%
+% Test Cases:
+% [shelf1] = mobyDick('w.txt')
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [shelf2] = mobyDick('s.txt')
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [shelf3] = mobyDick('j.txt')
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [shelf4] = mobyDick('f.txt')
+% 		Output variable(s) should be identical to that produced by the solution file
+%
+%--------------------------------------------------------------------------------
+%% Function Name: towersOfHaynoi
+%
+% Test Cases:
+% towersOfHaynoi(3, 'A', 'B', 'C')
+% 		Output text file(s) should be identical to that produced by the solution file
+% 
+% towersOfHaynoi(5, 'C', 'A', 'B')
+% 		Output text file(s) should be identical to that produced by the solution file
+% 
+% towersOfHaynoi(4, 'Truck 1', 'Truck 2', 'Truck 3')
+% 		Output text file(s) should be identical to that produced by the solution file
+% 
+% towersOfHaynoi(9, '1', '3', '2')
+% 		Output text file(s) should be identical to that produced by the solution file
 %

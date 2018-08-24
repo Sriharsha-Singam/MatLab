@@ -1,24 +1,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name         : Sriharsha Singam
-% T-square ID  : ssingam3
-% GT Email     : harshasingam3@gatech.edu
-% Homework     : HW13
+% T-square ID  : ~
+% GT Email     : ~
+% Homework     : HW15
 % Course       : CS1371
-% Section      : CO2
+% Section      : C02
 % Collaboration: "I worked on the homework assignment alone, using
 %                  only course materials."
-%
 % Files to submit:
-%	ABCs_recursion.m
-%	cheerfulDigits.m
-%	collatz.m
-%	determinant.m
-%	hw13.m
-%	luigisMansion.m
-%	mobyDick.m
-%	r_nFib.m
-%	recursiveSum.m
-%	towersOfHaynoi.m
+%	dragRace.m
+%	harmony.m
+%	hw15.m
+%	microscope.m
+%	movieStar.m
+%	recipe.m
+%	snekingZoo.m
+%	snowflake.m
+%	ultimateTicTacToe.m
 %
 % Instructions:
 %   1) Follow the directions for each problem very carefully or you will
@@ -39,30 +37,14 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %==========================================================================
-%% PART 1.  ABC Problems
-%--------------------------------------------------------------------------
-%
-% Part of this homework is an m-file called "ABCs_recursion.m".
-% Open this file in MATLAB and complete it
-% according to the directions contained within. You can test your answers with
-% the test file listed below.
-%
-% Files to Complete: 
-%	ABCs_recursion.m
-
-%
-% ABCs File Testing:
-%	ABCs_hw13_pretest.p
-%
-%==========================================================================
 %% PART 2. Drill Problems
 %--------------------------------------------------------------------------
 %
-% Included with this homework is a file entitled "HW13_DrillProblems.pdf",
+% Included with this homework is a file entitled "HW15_DrillProblems.pdf",
 % containing instructions for 8 drill problems that cover the
 % following topic:
 %
-%	Recursion
+%	Extra Credit (Review)
 %
 % Follow the directions carefully to write code to complete the drill
 % problems as described. Make sure file names as well as function headers
@@ -78,115 +60,127 @@
 % The function call with the test-inputs is shown in the first line of each
 % test case, and the correct outputs are displayed in subsequent lines.
 %
-%% Function Name: recursiveSum
+%% Function Name: recipe
 %
 % Test Cases:
-% [sum1] = recursiveSum([4,17,9,5])
-% 		Output variable(s) should be identical to that produced by the solution file
+% recipe('GroceryStore.xlsx', 'applePie.txt')
+% 		Output text file(s) should be identical to that produced by the solution file
 % 
-% [sum2] = recursiveSum([-5,0,9,4,13])
-% 		Output variable(s) should be identical to that produced by the solution file
+% recipe('GroceryStore.xlsx', 'SweetPotatoCasserole.txt')
+% 		Output text file(s) should be identical to that produced by the solution file
 % 
-% [sum3] = recursiveSum([3,-4,-8,-12,6,4])
-% 		Output variable(s) should be identical to that produced by the solution file
+% recipe('GroceryStore.xlsx', 'stuffing.txt')
+% 		Output text file(s) should be identical to that produced by the solution file
 %
 %--------------------------------------------------------------------------------
-%% Function Name: cheerfulDigits
-%
-% Test Cases:
-% [out1] = cheerfulDigits(7)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [out1] = cheerfulDigits(40)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [out1] = cheerfulDigits(129)
-% 		Output variable(s) should be identical to that produced by the solution file
-%
-%--------------------------------------------------------------------------------
-%% Function Name: r_nFib
-%
-% Test Cases:
-% [seq1] = r_nFib(4, 10)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [seq2] = r_nFib(0, 6)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [seq3] = r_nFib(400, 1)
-% 		Output variable(s) should be identical to that produced by the solution file
-%
-%--------------------------------------------------------------------------------
-%% Function Name: collatz
-%
-% Test Cases:
-% [out1, steps1] = collatz(1)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [out2, steps2] = collatz(54789)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [out3, steps3] = collatz(10)
-% 		Output variable(s) should be identical to that produced by the solution file
-%
-%--------------------------------------------------------------------------------
-%% Function Name: determinant
-%
-% Test Cases:
-% [out1] = determinant([1 8; 9 2])
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [out1] = determinant([1 8 4; 5 1 7; 2 9 6])
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [out1] = determinant([1 1 1 1 1; 2 2 2 2 2; 3 3 3 3 3; 4 4 4 4 4; 5 5 5 5 5])
-% 		Output variable(s) should be identical to that produced by the solution file
-%
-%--------------------------------------------------------------------------------
-%% Function Name: luigisMansion
+%% Function Name: movieStar
 %
 % Setup:
-%	load studentCases.mat
+%	load movieStarStudentCases.mat
 %
 % Test Cases:
-% [out1] = luigisMansion(mansion1, [1,1])
+% [cast1, money1, average1] = movieStar(movieStruc1)
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [out2] = luigisMansion(mansion2, [1,3])
+% [cast2, money2, average2] = movieStar(movieStruc2)
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [out3] = luigisMansion(mansion3, [2,2])
+% [cast3, money3, average3] = movieStar(movieStruc3)
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [cast4, money4, average4] = movieStar(movieStruc4)
 % 		Output variable(s) should be identical to that produced by the solution file
 %
 %--------------------------------------------------------------------------------
-%% Function Name: mobyDick
+%% Function Name: dragRace
+%
+% Setup:
+%	load studentRaceCases.mat
 %
 % Test Cases:
-% [shelf1] = mobyDick('w.txt')
+% [out1] = dragRace(stTimes1, stVelocities1, carsST1, 330)
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [shelf2] = mobyDick('s.txt')
+% [out1] = dragRace(stTimes2, stVelocities2, carsST2, 245)
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [shelf3] = mobyDick('j.txt')
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [shelf4] = mobyDick('f.txt')
+% [out1] = dragRace(stTimes3, stVelocities3, carsST3, 397)
 % 		Output variable(s) should be identical to that produced by the solution file
 %
 %--------------------------------------------------------------------------------
-%% Function Name: towersOfHaynoi
+%% Function Name: microscope
 %
 % Test Cases:
-% towersOfHaynoi(3, 'A', 'B', 'C')
-% 		Output text file(s) should be identical to that produced by the solution file
+% [out1] = microscope('microscope1.png', 45)
+% 		Output variable(s) should be identical to that produced by the solution file
 % 
-% towersOfHaynoi(5, 'C', 'A', 'B')
-% 		Output text file(s) should be identical to that produced by the solution file
+% [out1] = microscope('microscope2.png', 100)
+% 		Output variable(s) should be identical to that produced by the solution file
 % 
-% towersOfHaynoi(4, 'Truck 1', 'Truck 2', 'Truck 3')
-% 		Output text file(s) should be identical to that produced by the solution file
+% [out1] = microscope('microscope3.png', 30)
+% 		Output variable(s) should be identical to that produced by the solution file
+%
+%--------------------------------------------------------------------------------
+%% Function Name: snowflake
+%
+% Test Cases:
+% snowflake(0)
+% 		Output plot(s) should be identical to that produced by solution file
 % 
-% towersOfHaynoi(9, '1', '3', '2')
-% 		Output text file(s) should be identical to that produced by the solution file
+% snowflake(2)
+% 		Output plot(s) should be identical to that produced by solution file
+% 
+% snowflake(7)
+% 		Output plot(s) should be identical to that produced by solution file
+%
+%--------------------------------------------------------------------------------
+%% Function Name: snekingZoo
+%
+% Setup:
+%	load studentZoos.mat
+%
+% Test Cases:
+% [newZoo1] = snekingZoo(zoo1)
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [newZoo2] = snekingZoo(zoo2)
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [newZoo3] = snekingZoo(zoo3)
+% 		Output variable(s) should be identical to that produced by the solution file
+%
+%--------------------------------------------------------------------------------
+%% Function Name: ultimateTicTacToe
+%
+% Setup:
+%	load uTTT_studentCases.mat
+%
+% Test Cases:
+% [finalBoard1, finalResult1] = ultimateTicTacToe(board1, moves1)
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [finalBoard2, finalResult2] = ultimateTicTacToe(board2, moves2)
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [finalBoard3, finalResult3] = ultimateTicTacToe(board3, moves3)
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [finalBoard4, finalResult4] = ultimateTicTacToe(board4, moves4)
+% 		Output variable(s) should be identical to that produced by the solution file
+%
+%--------------------------------------------------------------------------------
+%% Function Name: harmony
+%
+% Setup:
+%	load noteFrequencies.mat
+%
+% Test Cases:
+% [notes1] = harmony([1,5,1])
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [notes2] = harmony([1,6,4,5,1])
+% 		Output variable(s) should be identical to that produced by the solution file
+% 
+% [notes3] = harmony([1,5,6,2,5,1])
+% 		Output variable(s) should be identical to that produced by the solution file
 %

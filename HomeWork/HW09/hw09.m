@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name         : Sriharsha Singam
-% T-square ID  : ssingam3
-% GT Email     : harshasingam3@gatech.edu
+% T-square ID  : ~
+% GT Email     : ~
 % Homework     : HW09
 % Course       : CS1371
 % Section      : C02

@@ -1,22 +1,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name         : Sriharsha Singam
-% T-square ID  : ssingam3
-% GT Email     : harshasingam3@gatech.edu
-% Homework     : HW15
+% T-square ID  : ~
+% GT Email     : ~
+% Homework     : HW11
 % Course       : CS1371
 % Section      : C02
 % Collaboration: "I worked on the homework assignment alone, using
 %                  only course materials."
+%
 % Files to submit:
-%	dragRace.m
-%	harmony.m
-%	hw15.m
-%	microscope.m
-%	movieStar.m
-%	recipe.m
-%	snekingZoo.m
-%	snowflake.m
-%	ultimateTicTacToe.m
+%	ABCs_numericalMethods.m
+%	ABCs_plotting.m
+%	area51.m
+%	cropPolygon.m
+%	flatEarth.m
+%	hw11.m
+%	illuminati.m
+%	isSeahavenReal.m
+%	timeTravel.m
 %
 % Instructions:
 %   1) Follow the directions for each problem very carefully or you will
@@ -37,14 +38,31 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %==========================================================================
+%% PART 1.  ABC Problems
+%--------------------------------------------------------------------------
+%
+% Part of this homework are m-files called "ABCs_plotting.m" and "ABCs_numericalMethods.m".
+% Open these files in MATLAB and complete them
+% according to the directions contained within. You can test your answers with
+% the test file listed below.
+%
+% Files to Complete: 
+%	ABCs_plotting.m
+%	ABCs_numericalMethods.m
+%
+% ABCs File Testing:
+%	ABCs_hw11_pretest.p
+%
+%==========================================================================
 %% PART 2. Drill Problems
 %--------------------------------------------------------------------------
 %
-% Included with this homework is a file entitled "HW15_DrillProblems.pdf",
-% containing instructions for 8 drill problems that cover the
-% following topic:
+% Included with this homework is a file entitled "HW11_DrillProblems.pdf",
+% containing instructions for 6 drill problems that cover the
+% following topics:
 %
-%	Extra Credit (Review)
+%	Plotting
+%	Numerical Methods
 %
 % Follow the directions carefully to write code to complete the drill
 % problems as described. Make sure file names as well as function headers
@@ -60,127 +78,108 @@
 % The function call with the test-inputs is shown in the first line of each
 % test case, and the correct outputs are displayed in subsequent lines.
 %
-%% Function Name: recipe
+%% Function Name: illuminati
 %
 % Test Cases:
-% recipe('GroceryStore.xlsx', 'applePie.txt')
-% 		Output text file(s) should be identical to that produced by the solution file
-% 
-% recipe('GroceryStore.xlsx', 'SweetPotatoCasserole.txt')
-% 		Output text file(s) should be identical to that produced by the solution file
-% 
-% recipe('GroceryStore.xlsx', 'stuffing.txt')
-% 		Output text file(s) should be identical to that produced by the solution file
-%
-%--------------------------------------------------------------------------------
-%% Function Name: movieStar
-%
-% Setup:
-%	load movieStarStudentCases.mat
-%
-% Test Cases:
-% [cast1, money1, average1] = movieStar(movieStruc1)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [cast2, money2, average2] = movieStar(movieStruc2)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [cast3, money3, average3] = movieStar(movieStruc3)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [cast4, money4, average4] = movieStar(movieStruc4)
-% 		Output variable(s) should be identical to that produced by the solution file
-%
-%--------------------------------------------------------------------------------
-%% Function Name: dragRace
-%
-% Setup:
-%	load studentRaceCases.mat
-%
-% Test Cases:
-% [out1] = dragRace(stTimes1, stVelocities1, carsST1, 330)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [out1] = dragRace(stTimes2, stVelocities2, carsST2, 245)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [out1] = dragRace(stTimes3, stVelocities3, carsST3, 397)
-% 		Output variable(s) should be identical to that produced by the solution file
-%
-%--------------------------------------------------------------------------------
-%% Function Name: microscope
-%
-% Test Cases:
-% [out1] = microscope('microscope1.png', 45)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [out1] = microscope('microscope2.png', 100)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [out1] = microscope('microscope3.png', 30)
-% 		Output variable(s) should be identical to that produced by the solution file
-%
-%--------------------------------------------------------------------------------
-%% Function Name: snowflake
-%
-% Test Cases:
-% snowflake(0)
+% illuminati(3, 45)
 % 		Output plot(s) should be identical to that produced by solution file
 % 
-% snowflake(2)
+% illuminati(28, 3)
 % 		Output plot(s) should be identical to that produced by solution file
 % 
-% snowflake(7)
+% illuminati(1.5, 69)
 % 		Output plot(s) should be identical to that produced by solution file
 %
 %--------------------------------------------------------------------------------
-%% Function Name: snekingZoo
+%% Function Name: flatEarth
 %
 % Setup:
-%	load studentZoos.mat
+%	load flatEarth_student.mat
 %
 % Test Cases:
-% [newZoo1] = snekingZoo(zoo1)
+% [out1] = flatEarth(vel1, time1)
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [newZoo2] = snekingZoo(zoo2)
+% [out2] = flatEarth(vel2, time2)
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [newZoo3] = snekingZoo(zoo3)
+% [out3] = flatEarth(vel3, time3)
 % 		Output variable(s) should be identical to that produced by the solution file
 %
 %--------------------------------------------------------------------------------
-%% Function Name: ultimateTicTacToe
+%% Function Name: timeTravel
 %
 % Setup:
-%	load uTTT_studentCases.mat
+%	load timeTravel_rubrica.mat
 %
 % Test Cases:
-% [finalBoard1, finalResult1] = ultimateTicTacToe(board1, moves1)
+% [str1] = timeTravel(in1, in2, in3)
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [finalBoard2, finalResult2] = ultimateTicTacToe(board2, moves2)
+% [str2] = timeTravel(in4, in5, in6)
 % 		Output variable(s) should be identical to that produced by the solution file
 % 
-% [finalBoard3, finalResult3] = ultimateTicTacToe(board3, moves3)
-% 		Output variable(s) should be identical to that produced by the solution file
-% 
-% [finalBoard4, finalResult4] = ultimateTicTacToe(board4, moves4)
+% [str3] = timeTravel(in7, in8, in9)
 % 		Output variable(s) should be identical to that produced by the solution file
 %
 %--------------------------------------------------------------------------------
-%% Function Name: harmony
+%% Function Name: area51
 %
 % Setup:
-%	load noteFrequencies.mat
+%	load area51cases.mat
 %
 % Test Cases:
-% [notes1] = harmony([1,5,1])
+% [str1] = area51(data1, [20000 40000], 5)
 % 		Output variable(s) should be identical to that produced by the solution file
+% 		Output plot(s) should be identical to that produced by solution file
 % 
-% [notes2] = harmony([1,6,4,5,1])
+% [str2] = area51(data2, [345676 839594], 7.8)
 % 		Output variable(s) should be identical to that produced by the solution file
+% 		Output plot(s) should be identical to that produced by solution file
 % 
-% [notes3] = harmony([1,5,6,2,5,1])
+% [str3] = area51(data3, [10000 15000], 1.3)
 % 		Output variable(s) should be identical to that produced by the solution file
+% 		Output plot(s) should be identical to that produced by solution file
+%
+%--------------------------------------------------------------------------------
+%% Function Name: cropPolygon
+%
+% Setup:
+%	load cropPolygonTest.mat
+%
+% Test Cases:
+% cropPolygon(lengths1, angles1)
+% 		Output plot(s) should be identical to that produced by solution file
+% 
+% cropPolygon(lengths2, angles2)
+% 		Output plot(s) should be identical to that produced by solution file
+% 
+% cropPolygon(lengths3, angles3)
+% 		Output plot(s) should be identical to that produced by solution file
+% 
+% cropPolygon(lengths4, angles4)
+% 		Output plot(s) should be identical to that produced by solution file
+%
+%--------------------------------------------------------------------------------
+%% Function Name: isSeahavenReal
+%
+% Setup:
+%	load isSeahavenReal_rubrica.mat
+%
+% Test Cases:
+% [coeffs1] = isSeahavenReal(in1, in2)
+% 		Output variable(s) should be identical to that produced by the solution file
+% 		Output plot(s) should be identical to that produced by solution file
+% 
+% [coeffs2] = isSeahavenReal(in3, in4)
+% 		Output variable(s) should be identical to that produced by the solution file
+% 		Output plot(s) should be identical to that produced by solution file
+% 
+% [coeffs3] = isSeahavenReal(in5, in6)
+% 		Output variable(s) should be identical to that produced by the solution file
+% 		Output plot(s) should be identical to that produced by solution file
+% 
+% [coeffs4] = isSeahavenReal(in7, in8)
+% 		Output variable(s) should be identical to that produced by the solution file
+% 		Output plot(s) should be identical to that produced by solution file
 %
